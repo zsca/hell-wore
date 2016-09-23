@@ -1,0 +1,75 @@
+.weui-header-right a {
+	
+	font-size: 17px;
+	border: none;
+	border: 1px solid rgb(0, 0, 0, re);
+}
+.bg_white{
+	background-color: white;
+}
+.delete {
+	width: 100vw;
+	position: fixed;
+	bottom: 0px;
+}
+
+.delete_buttom {
+	width: 65vw;
+}
+
+.weui_dialog_confirm_tianjia {
+	opacity: 1;
+	visibility: visible;
+}
+
+.help_center_body {
+	margin-top: 20px;
+	background-color: #F7F7F7;
+}
+
+.suggest_submit {
+	float: right;
+	margin-right: 20px;
+}
+
+.weui_cell_one {
+	background-color: #F7F7F7;
+}
+
+.weui_cell .weui_cell_ft_p {
+	margin: 20px auto;
+	text-align: left !important;
+	float: left !important;
+	flex: 2;
+}
+
+.weui_cell .weui_cell_ft_right {
+	font-size: 20px;
+}
+
+.weui_cell .weui_cell_ft_p_one {
+	color: black !important;
+}
+
+.weui_cell .weui_cell_ft_p_two {
+	font-size: 13px;
+	color: cornflowerblue !important;
+}
+
+.xiangmu_top {
+	width: 100vw;
+	position: fixed;
+	z-index: 9999999;
+	top: 0px;
+}
+.xiangmu_top_qingchu {
+	width: 100vw;
+	height: 45px;
+	overflow: auto;
+}
+.header-right{
+	margin-right: 20px;
+}
+body>div.weui-header{
+	border-bottom: 1px solid gainsboro;
+}

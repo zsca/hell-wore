@@ -1,0 +1,170 @@
+.container>.indent {
+			padding-bottom: 2px;
+			box-shadow: 0px 5px 2px gainsboro;
+			margin-bottom: 15px;
+		}
+		
+		.container>div:nth-of-type(3).indent {}
+		
+		.container>div:nth-of-type(3).indent hr {
+			margin: 5px 20px;
+		}
+		
+		.container>div:nth-of-type(3).indent span {
+			margin-right: 20px;
+		}
+		
+		.container>div:nth-of-type(4).padding {
+			box-shadow: 0px 5px 2px gainsboro;
+		}
+		
+		.container>div:nth-of-type(4).padding div:nth-of-type(1) div:nth-of-type(2) {
+			padding-left: 10px;
+		}
+		
+		.container>div:nth-of-type(4).padding div:nth-of-type(1) div:nth-of-type(2) h5 {
+			margin-bottom: 2px;
+		}
+		
+		.container>div:nth-of-type(4).padding div:nth-of-type(1) div:nth-of-type(2) button {
+			padding: 3px;
+			border-radius: 15%;
+			background-color: white;
+		}
+		
+		.container>div:nth-of-type(4).padding div:nth-of-type(2)>div:nth-of-type(1) {
+			border-right: 1px solid gainsboro;
+		}
+		
+		.container>div:nth-of-type(5).padding {
+			margin-top: 15px;
+			box-shadow: 0px 5px 2px gainsboro;
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+		}
+		
+		.container>div:nth-of-type(5).padding>div:nth-of-type(1)>div {
+			height: 30px;
+			border-bottom: 1px solid gainsboro;
+			margin-bottom: 10px;
+		}
+		
+		.container>div:nth-of-type(5).padding>div:nth-of-type(2)>img {
+			width: 100%;
+		}
+		
+		.commoditTianJia {
+			color: rgb(229, 39, 98);
+			border-bottom: 1px solid rgb(229, 39, 98) !important;
+		}
+		
+		.container>div:nth-of-type(5).padding>div:nth-of-type(3)>div:nth-of-type(1),
+		.container>div:nth-of-type(6).row>div:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1) {
+			background-color: gainsboro;
+		}
+		
+		.container>div:nth-of-type(5).padding>div:nth-of-type(3)>div ul,
+		.container>div:nth-of-type(6).row>div:nth-of-type(1)>div:nth-of-type(2)>div ul {
+			margin-bottom: 0px;
+		}
+		
+		.container>div:nth-of-type(5).padding>div:nth-of-type(3)>div ul li,
+		.container>div:nth-of-type(6).row>div:nth-of-type(1)>div:nth-of-type(2)>div ul li {
+			list-style-type: none;
+			border-bottom: 1px solid gray;
+		}
+		
+		.container>div:nth-of-type(5).padding>div:nth-of-type(3),
+		.container>div:nth-of-type(6).row>div:nth-of-type(1)>div:nth-of-type(2) {
+			border: 1px solid gray;
+		}
+		
+		.top {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			border: 1px solid rgb(299, 39, 98);
+			background-color: rgb(299, 39, 98);
+			position: fixed;
+			z-index: 3;
+			bottom: 40px;
+			right: 20px;
+		}
+		
+		.top span {
+			line-height: 30px;
+		}
+		
+		.container>div:nth-of-type(6).row {
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0px;
+			z-index: 5;
+			background-color: rgba(0,0,0,0.5);
+		}
+		.container>div:nth-of-type(6).row>div:nth-of-type(1){
+			width: 100vw;
+			position:fixed;
+			bottom: 0;
+		}
+		.container>div:nth-of-type(6).row>div:nth-of-type(1)>div:nth-of-type(1){
+			width: 100vw;
+			line-height: 35px;
+		} 
+		.container>div:nth-of-type(6).row>div:nth-of-type(1)>div:nth-of-type(2) {
+			height: 35vh;
+			overflow: scroll;
+		}
+		.container>div:nth-of-type(6).row>div:nth-of-type(1)>button,
+		.container>div:nth-of-type(6).row>div:nth-of-type(2)>button{
+			width: 100vw;
+			background-color: rgb(299, 39, 98);
+			color: white;
+			border: 0px !important;
+			line-height: 35px;
+		}
+		.container>div:nth-of-type(6).row>div:nth-of-type(2){
+			background-color: white;
+			position: fixed;
+			bottom: 0;
+			z-index: 5;
+		}
+		.container>div:nth-of-type(6).row>div:nth-of-type(2)>div:nth-of-type(1):nth-of-type(1){
+			width: 100vw;
+			padding: 0px;
+			height: 75px;
+			
+		}
+		.container>div:nth-of-type(6).row>div:nth-of-type(2)>div:nth-of-type(1)>div:nth-of-type(1) img{
+			width: 100px;
+			height: 100px;
+			position: relative;
+			
+			top: -25px;
+		}
+		.container>div:nth-of-type(6).row>div:nth-of-type(2)>div:nth-of-type(2) {
+			height: 35vh;
+			overflow: scroll;
+			border: 1px solid rgba(0,0,0,0);
+			border-bottom: 1px solid gainsboro;
+			border-top: 1px solid gainsboro;
+		}
+		.container>div:nth-of-type(6).row>div:nth-of-type(2)>div:nth-of-type(2)>div{
+			border-bottom: 1px solid gainsboro;
+			padding: 15px;
+			margin-bottom: 10px;
+		}
+		.container>div:nth-of-type(6).row>div:nth-of-type(2)>div:nth-of-type(2) div button{
+			margin-top: 10px;
+			margin-left: 10px;
+			padding: 1px 5px;
+			border-radius: 3px;
+		}
+		.container>div:nth-of-type(6).row>div:nth-of-type(2)>div:nth-of-type(3){
+			padding: 15px;
+		}
+		.buttonTianJia{
+			background-color: #557098;
+			color: white;
+		}
