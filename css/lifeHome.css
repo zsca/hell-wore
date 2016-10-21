@@ -23,36 +23,6 @@
 		.f-color{
 			color: rgb(299, 39, 98);
 		}
-		
-		.container>nav {
-			width: 100vw;
-			line-height: 35px;
-			margin: 0px;
-			padding: 0;
-			background-color: white;
-			top: 0px;
-			z-index: 3;
-			border-bottom: 1px solid gainsboro;
-		}
-		
-		.container>nav>a {
-			color: darkgray;
-			position: absolute;
-			float: left;
-		}
-		
-		.container>nav>div {
-			color: darkgray;
-			float: right;
-			position: absolute;
-			right: 10px;
-		}
-		
-		.container>nav>a {
-			margin-left: 10px;
-			color: gray;
-		}
-		
 		.container>div:nth-of-type(1) {
 			text-align: center;
 			position: relative;
@@ -68,11 +38,17 @@
 			padding-bottom: 5px;
 			position: relative;
 			top: -35px;
+			font-size: 13px;
+			font-weight:normal;
+			color: #828282;
 		}
-		
+		.container>div:nth-of-type(1)>div>p{
+			font-weight: bold;
+			color: #000000;
+		}
 		.container>div:nth-of-type(1)>div>img:nth-of-type(1) {
-			width: 70px;
-			height: 70px;
+			width: 55px;
+			height: 55px;
 			margin: 0 auto;
 			background-color: white;
 			border-radius: 50%;
@@ -81,10 +57,13 @@
 		.container>div:nth-of-type(2) {
 			box-shadow: 1px 1px 5px gainsboro;
 			background-color: white;
+			height: 39px;
 		}
 		
 		.container>div:nth-of-type(2)>div {
-			padding: 10px 20px;
+			padding: 8px 20px;
+			
+			font-family:"Heiti SC", "Microsoft Yahei";
 		}
 		
 		.clickAdd {
@@ -96,12 +75,13 @@
 		.container>div:nth-of-type(2)>div:nth-of-type(2) {
 			border-right: 1px solid gainsboro;
 		}
-		
 		.container>div:nth-of-type(3).row {
-			padding: 10px 0px;
-			background-color: #F0F0F0;
+			padding: 10px 10px;
+			background-color: #fafafa;
 		}
-		
+		.container>div:nth-of-type(3).row>div{
+			padding: 0px !important;
+		}
 		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div:nth-of-type(1) p,
 		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div:nth-of-type(2)>p {
 			margin: 0;
@@ -112,6 +92,9 @@
 		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div li {
 			list-style-type: none;
 			padding: 5px 0;
+			line-height: 1.5rem;
+			font-size: 1.3rem;
+			font-family: "Heiti SC", "Microsoft Yahei";
 		}
 		
 		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div>ul:nth-of-type(1) {
@@ -125,7 +108,7 @@
 		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1) {
 			width: 100%;
 			height: 200px;
-			border: 1px solid gray;
+			
 		}
 		
 		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div:nth-of-type(3) {
@@ -143,6 +126,8 @@
 			padding: 5px 8px 15px 8px;
 			margin-bottom: 10px;
 			background-color: white;
+			font-size: 1.3rem;
+			color: #666;
 		}
 		
 		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div:nth-of-type(4) {
@@ -151,6 +136,7 @@
 		
 		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div:nth-of-type(4)>div {
 			margin-bottom: 10px;
+			border-bottom: 1px solid gainsboro;
 		}
 		
 		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div:nth-of-type(4)>div>div>img {
@@ -161,33 +147,49 @@
 		
 		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div:nth-of-type(4)>div>div>span {
 			margin-right: 15px;
+			font-size: 13px;
+			color: #696969;
 		}
-		
+		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div:nth-of-type(4)>div>div>b{
+			font-size: 13px;
+			color: #696969;
+			padding-left: 10px;
+		}
 		.container>div:nth-of-type(3).row>div:nth-of-type(1)>div:nth-of-type(4)>div>div>p {
 			padding: 10px;
+			font-size: 12px;
+			font-size: .6rem;
 		}
-		
-		.container>div:nth-of-type(3).row>div:nth-of-type(2)>a {
-			padding-top: 10px;
-			background-color: white;
-			margin-top: 10px;
+		.container>div:nth-of-type(3).row>div:nth-of-type(2)>li{
+			list-style-type: none;
+			margin-bottom: 10px;
+			width: 48%;
+			float: left;
+			background-color: #fff;
+			border: 1px solid #efefef;
+		}
+		.container>div:nth-of-type(3).row>div:nth-of-type(2)>li:nth-child(odd){
+			margin-right: 2%;
+		}
+		.container>div:nth-of-type(3).row>div:nth-of-type(2)>li:nth-child(even){
+			margin-left: 2%;
+		}
+		.container>div:nth-of-type(3).row>div:nth-of-type(2)>li a {
+			padding: 0px;
+			
+		}
+		.container>div:nth-of-type(3).row>div:nth-of-type(2)>li a img {
+			width: 100%;
+		}
+		.container>div:nth-of-type(3).row>div:nth-of-type(2)>li a p{
 			white-space: nowrap;
 			text-overflow: ellipsis;
 			overflow: hidden;
+			padding: 5px 8px;
+			margin-bottom: 0px;
+			color: #3d3c3c;
+			font-size: 12px;
 		}
-		
-		.container>div:nth-of-type(3).row>div:nth-of-type(2)>a:nth-child(odd) {
-			border-right: 1px solid gainsboro;
-		}
-		
-		.container>div:nth-of-type(3).row>div:nth-of-type(2)>a:nth-child(even) {
-			border-left: 1px solid gainsboro;
-		}
-		
-		.container>div:nth-of-type(3).row>div:nth-of-type(2)>a img {
-			width: 100%;
-		}
-		
 		.scrollTop {
 			position: fixed;
 			z-index: 5;
