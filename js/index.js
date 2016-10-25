@@ -2,19 +2,13 @@ $(document).ready(function() {
 	$(".classify li").click(function() {
 		$(this).addClass("liAdd").siblings().removeClass("liAdd")
 	});
-	$(".box div button").click(function() {
-		if($(this).is(".icon-49") == true) {
-			$(this).removeClass("icon-49").addClass("icon-48")
-		} else {
-			$(this).removeClass("icon-48").addClass("icon-49")
-		}
-	});
+	
 	//	滚动条事件
-
+	var scrollhight
 	$(window).scroll(function() {
-		var scrollhight
+		
 		scrollhight = document.body.scrollTop;
-		if(scrollhight > 300) {
+		if(scrollhight > 250) {
 			$(".classIFY").addClass("screenTop")
 
 		} else {
@@ -46,33 +40,23 @@ $(document).ready(function() {
 			$("#pullDown").hide();
 			$("#clickPullDown").removeClass("icon-9").addClass("icon-10")
 
-			if(scrollhight < 300) {
+			if(scrollhight < 250) {
 				$(".classIFY").removeClass("screenTop")
 			} else {
 				$(".classIFY").addClass("screenTop")
 			}
-
+			scrollhight=251
 		}
 	});
-	$(".panel-body>button").click(function(){
-		if ($(this).is(".bg-color")==true) {
-			$(this).removeClass("bg-color f-white").addClass("fb-color")
+	//收藏
+	$(".container>.row>.screen>.box div button").click(function(){
+		if ($(this).is(".icon-49")==true) {
+			$(this).removeClass("icon-49").addClass("icon-48")
 		} else{
-			$(this).addClass("bg-color f-white")
+			$(this).removeClass("icon-48").addClass("icon-49")
 			
 		}
 	})
-		//分享
-	$(function() {
-		$(document).on('swipe', '#item .weui_cell', function() {
-
-			$('.delete').hide()
-			$('.delete', this).show();
-		})
-		$(document).on('tap', '.delete', function() {
-			$(this).parent().parent('.weui_cell').remove();
-		})
-
-	});
+	
 
 })

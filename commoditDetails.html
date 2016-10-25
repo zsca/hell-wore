@@ -6,91 +6,79 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<meta name="viewport" content="width=device-width,user-scalable=no">
-		<title>买家秀</title>
+		<title>商品详情</title>
 		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/weui.css" />
 		<link rel="stylesheet" href="css/weui2.css" />
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/commoditDetails.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
 	</head>
 
 	<body>
 		<div class="container">
-			<!--头部-->
-			<nav class="navbar">
-				<h3>
-					<a class="icon icon-109 left f-gray f23 indent" onclick="history.go(-1)"></a>
-					<a href="user.html"><span class="glyphicon glyphicon-user" ></span></a>
-					<a class="dropdown">
-						<a  class=" dropdown-toggle" id="dropdownMenu1" 
-								data-toggle="dropdown">
-						<span class="glyphicon glyphicon-align-justify"></span>
-						</a>
-						<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
-							<li role="presentation">
-								<a role="menuitem" tabindex="-1" href="#" onclick="$('.share').show().addClass('ani-fade hand')">分享</a>
-							</li>
-							<li role="presentation">
-								<a role="menuitem" tabindex="-1" href="#">通知</a>
-							</li>
-						</ul>
-					</a>
-				</h3>
-			</nav>
+			<span class="colle-commodity icon icon-49 f-color f25"></span>
 			<!--轮播-->
-			<a name="tops"></a>
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-top: 50px; height: 31vh;">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<img src="images/2 (1).jpg" alt="...">
+						<img src="images/1 (1).jpg">
 					</div>
 					<div class="item">
-						<img src="images/2 (3).jpg" alt="...">
+						<img src="images/1 (2).jpg">
 					</div>
 					<div class="item">
-						<img src="images/2 (5).jpg" alt="...">
+						<img src="images/1 (4).jpg">
+					</div>
+					<div class="item">
+						<img src="images/1 (5).jpg">
+					</div>
+					<div class="item">
+						<img src="images/1 (6).jpg">
+					</div>
+					<div class="item">
+						<img src="images/1 (7).jpg">
+					</div>
+					<div class="item">
+						<img src="images/1 (8).jpg">
+					</div>
+					<div class="item">
+						<img src="images/1 (9).jpg">
 					</div>
 				</div>
 			</div>
 			<!--商品名称、价钱-->
 			<div class="indent">
-				<p>
-					<h4>商品名称</h4>
-					<h5 class="f-color">￥aaa</h5>
-				</p>
+				<p >回眸一笑嫣然娇，断魂飘摇上碧霄</p>
+				<p class="f-color"><b>￥4543-￥4542</b></p>
 			</div>
 			<!--商品详情，规格-->
 			<div class="indent">
-				<h4 class="showOne">产品参数<span class="icon icon-108 right"></span></h4>
+				<p class="showOne">产品参数<span class="icon icon-108 right"></span></p>
 				<hr />
-				<h5 class="showTwo">规格、材质、库存<span class="icon icon-108 right"></span></h5>
+				<p class="showTwo">规格、材质、库存<span class="icon icon-108 right"></span></p>
 			</div>
 			<!--商铺信息-->
 			<div class="row padding">
-				<div class="col-xs-5 col-sm-5 margin padding">
+				<div class="col-xs-6 col-sm-6 margin padding">
 					<div class="left padding">
-						<img src="images/icon_nav_panel.png" />
+						<img src="images/2 (11).jpg" />
 					</div>
 					<div class="left padding">
-						<h5>风村</h5>
+						<h5>此行莫恨天涯遠</h5>
 						<button class="fb-color f12 " onclick="javascript:window.location.href='index.html'">进入品牌</button>
 					</div>
 				</div>
-				<div class="col-xs-7 col-sm-7 padding margin">
+				<div class="col-xs-6 col-sm-6 padding margin">
 					<div class="col-xs-6 col-sm-6 padding padding margin" onclick="javascript:window.location.href='index.html'">
-						<h5 class="tcenter f-black">
-							106<br />
-							
-							全部产品
-						</h5>
+						<p class="tcenter f-black">106</p>
+						<p class="tcenter" style="color: #999999;">全部产品</p>
 					</div>
 
 					<div class="col-xs-6 col-sm-6 padding">
-						<h5 class="tcenter f-black">
-							1.12k<br />
-							
-							关注度
-						</h5>
+						<p class="tcenter f-black">
+							<span class="fb-color button-padding">收藏</span>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -150,7 +138,7 @@
 			</a>
 			<!--弹出信息-->
 			<div class="row" id="popup" style="display: none;">
-				<div  class="popup" >
+				<div class="popup">
 					<div class="bg-white tcenter f15">参数</div>
 					<div class="col-xs-12 col-sm-12 padding bg-white">
 
@@ -185,22 +173,22 @@
 							</ul>
 						</div>
 					</div>
-					<button class="tcenter f16 hideOne" >确定</button>
+					<button class="tcenter f16 hideOne">确定</button>
 				</div>
-				<div  class="popup" >
+				<div class="popup">
 					<div class="bg-white tcenter f15">
 						<div class="col-xs-4 col-sm-4"><img src="images/3 (18).jpg"></div>
 						<div class="col-xs-8 col-sm-8 tleft">
-							<p >
-								<h4>四月</h4>
-								<span class="f-color">￥2500</span>
-							</p>
+							
+								<p class="f-black">你是人间四月天</p>
+								<p class="f-color ">￥2500</p>
+								<p class="f-gray f13">请选择规格颜色分类</p>
 						</div>
-						
+
 					</div>
 					<div class="col-xs-12 col-sm-12 padding bg-white ">
 						<div class="choose">
-							<p>规格（长X宽X高）</p>
+							<p>规格（长*宽*高）</p>
 							<button class="buttonTianJia">1000*900*930（单人位）</button>
 							<button>1800*900*930（双人位）</button>
 							<button>2180*900*930（三人位）</button>
@@ -219,21 +207,37 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-12  bg-white">库存：455</div>
-					<button class="tcenter f16 hideOne" >确定</button>
+					<button class="tcenter f18 hideOne">确定</button>
 				</div>
 			</div>
-			
+
 		</div>
-		<!--分享-->
-		<div style="display:none;" class="share" onclick="$(this).fadeOut();$(this).removeClass('ani-fade hand')">
-			<div class="sharebox">
-				点击右上角发送给指定朋友或分享到朋友圈 <i></i>
+		<div class="weui_tab tab-bottom zindex">
+			<div class="weui_tabbar ">
+				<a href="index.html" class="weui_tabbar_item ">
+					<div class="weui_tabbar_icon">
+						<i class="iconfont f-black">&#xe602;</i>
+					</div>
+					<p class="weui_tabbar_label ">首页</p>
+				</a>
+				<a href="indexLifeHome.html" class="weui_tabbar_item">
+					<div class="weui_tabbar_icon">
+						<i class="iconfont f-black ">&#xe607;</i>
+					</div>
+					<p class="weui_tabbar_label" style="padding-left: 3%;">买家秀</p>
+				</a>
+				<a href="user.html" class="weui_tabbar_item">
+					<div class="weui_tabbar_icon">
+						<i class="iconfont f-black ">&#xe603;</i>
+					</div>
+					<p class="weui_tabbar_label">用户</p>
+				</a>
 			</div>
 		</div>
 		<script src="js/jquery-3.1.0.min.js"></script>
 		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/commoditDetails.js" ></script>
-		<script type="text/javascript" src="js/sharetop.js" ></script>
+		<script type="text/javascript" src="js/commoditDetails.js"></script>
+
 	</body>
 
 </html>

@@ -37,4 +37,16 @@ $(document).ready(function() {
 	$(".popup").click(function(event) {
 		event.stopPropagation();
 	});
+	//收藏商品
+	$(".colle-commodity").click(function(){
+		if ($(this).is(".icon-49 ")==true) {
+			$(this).removeClass("icon-49 f-blue ").addClass("icon-48 fb-color");
+		} else{
+			$(this).removeClass("icon-48 fb-color").addClass("icon-49 f-blue");
+		}
+	});
+	//收藏店铺
+	$(".button-padding").click(function(){
+		$(this).parent().text("已收藏").addClass("f-gray")
+	});
 })

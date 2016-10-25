@@ -1,4 +1,6 @@
-
+body{
+	font-family: "Heiti SC", "Microsoft Yahei";
+}
 .colle-commodity {
 	position: absolute;
 	z-index: 50;
@@ -6,12 +8,13 @@
 	padding: 10px;
 	border: none;
 }
+
 .f12rem {
 	font-size: 1.2rem;
 	font-weight: normal;
 }
 .container>.indent:nth-of-type(3){
-	border-top: .6rem solid #eeeeed ;
+	border-top: .5rem solid #eeeeed ;
 }
 body>.container>div:nth-of-type(2).indent>p{
 	font-size:1.7rem;
@@ -19,6 +22,7 @@ body>.container>div:nth-of-type(2).indent>p{
 	height: 35px;
 	line-height: 35px;
 	margin-bottom: 2px;
+	overflow: hidden;
 }
 
 #carousel-example-generic{
@@ -47,16 +51,27 @@ body>.container>div:nth-of-type(2).indent>p{
 }
 
 .container>div:nth-of-type(4).padding {
-	border-top: .6rem solid #eeeeed ;
-	height: 60px;
+	border-top: .5rem solid #eeeeed ;
+	padding:10px
+}
+.container>div:nth-of-type(4).padding>div{
+	height: 48px;
 }
 
+.container>div:nth-of-type(4).padding>div:nth-of-type(1).margin>div:nth-of-type(1) img{
+	width: 48px;
+	height:48px;
+}
 .container>div:nth-of-type(4).padding div:nth-of-type(1) div:nth-of-type(2) {
 	padding-left: 10px;
 }
 
 .container>div:nth-of-type(4).padding div:nth-of-type(1) div:nth-of-type(2) h5 {
-	margin-bottom: 2px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	font-family: "微软雅黑";
+	height: 15px;
+	overflow: hidden;
 }
 
 .container>div:nth-of-type(4).padding div:nth-of-type(1) div:nth-of-type(2) button {
@@ -67,19 +82,19 @@ body>.container>div:nth-of-type(2).indent>p{
 
 .container>div:nth-of-type(4).padding div:nth-of-type(2)>div:nth-of-type(1) {
 	border-right: 1px solid gainsboro;
-	padding-top: 10px;
 }
 .container>div:nth-of-type(4).padding div:nth-of-type(2)>div:nth-of-type(1)>p{
 	margin-bottom: 0;
 }
 .container>div:nth-of-type(4).padding div:nth-of-type(2)>div:nth-of-type(2)>p{
-	height: 53px;
-	line-height:53px;
+	height: 48px;
+	line-height:48px;
+	margin-bottom: 0px;
 }
 .container>div:nth-of-type(5).padding {
-	border-top: .4rem solid #eeeeed ;
-	margin-top: 15px;
-	box-shadow: 0px 5px 2px gainsboro;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top: .5rem solid #eeeeed ;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
@@ -113,12 +128,14 @@ body>.container>div:nth-of-type(2).indent>p{
 .container>div:nth-of-type(5).padding>div:nth-of-type(3)>div ul li,
 .container>div:nth-of-type(6).row>div:nth-of-type(1)>div:nth-of-type(2)>div ul li {
 	list-style-type: none;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #E3E3E3;
+	padding-top:0.3rem ;
+	padding-bottom: 0.3rem;
 }
 
 .container>div:nth-of-type(5).padding>div:nth-of-type(3),
 .container>div:nth-of-type(6).row>div:nth-of-type(1)>div:nth-of-type(2) {
-	border: 1px solid gray;
+	border: 1px solid #E3E3E3;
 }
 
 .top {
@@ -181,14 +198,22 @@ body>.container>div:nth-of-type(2).indent>p{
 .container>div:nth-of-type(6).row>div:nth-of-type(2)>div:nth-of-type(1):nth-of-type(1) {
 	width: 100vw;
 	padding: 0px;
-	height: 75px;
+	height: 85px;
 }
-
+.container>div:nth-of-type(6).row>div:nth-of-type(2)>div:nth-of-type(1)>div:nth-of-type(2){
+	padding-left: 8px;	
+}
+.container>div:nth-of-type(6).row>div:nth-of-type(2)>div:nth-of-type(1)>div:nth-of-type(2)>p:nth-of-type(1){
+	margin-top:11px ;
+	font-family: "微软雅黑";
+	color: #000000;
+}
 .container>div:nth-of-type(6).row>div:nth-of-type(2)>div:nth-of-type(1)>div:nth-of-type(1) img {
 	width: 100px;
 	height: 100px;
-	position: relative;
-	top: -25px;
+	position: absolute;
+	top: -15px;
+	left:10px;
 }
 
 .container>div:nth-of-type(6).row>div:nth-of-type(2)>div:nth-of-type(2) {
